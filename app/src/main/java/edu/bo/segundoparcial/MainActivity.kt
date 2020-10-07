@@ -7,6 +7,7 @@ import android.util.Log
 import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.squareup.picasso.Picasso
+import kotlinx.android.synthetic.main.activity_create_book.*
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.book_row.*
 import kotlinx.coroutines.GlobalScope
@@ -22,6 +23,10 @@ class MainActivity : AppCompatActivity() {
             val bookDao = AppRoomDatabase.getDatabase(applicationContext).bookDato()
             val repository = BookRepository(bookDao)
 
+//            button_create.setOnClickListener{
+//
+//                repository.insert(Book(editTextTextTitle.toString(),editTextTextPages.toString().toInt(),editTextTextEditorial.toString(),editTextTextAuthor.toString(),editTextTextDescription.toString(),editTextTextPhotoUrl.toString()))
+//            }
 
 
             repository.insert(Book("the best seller: Android",22,"Editorial1","JuanJose","descripcion del libro","https://i.pinimg.com/474x/a8/6e/26/a86e26dffbcd0f8ffd0b7a6a4809ec68.jpg"))
