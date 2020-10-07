@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">SegundoParcial</string>
+    <string name="txt_create_book_title">Title :</string>
+    <string name="txt_create_book_activity_title">CREATE NEW BOOK</string>
+    <string name="txt_create_book_pages">Pages :</string>
+    <string name="txt_create_book_editorial">Editorial</string>
+    <string name="txt_create_book_author">Author</string>
+    <string name="txt_create_book_description">Description</string>
+    <string name="txt_create_book_photoUrl">Photo Url :</string>
+    <string name="btn_create_book">CREATE</string>
+    <string name="txt_create_book_title_hint">Title</string>
+    <string name="txt_create_book_pages_hint">Pages</string>
+    <string name="txt_create_book_editorial_hint">Editorial</string>
+    <string name="txt_create_book_author_hint">Author</string>
+    <string name="txt_create_book_description_hint">Description</string>
+    <string name="txt_create_book_photoUrl_hint">Photo Url</string>
 </resources>
