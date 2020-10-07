@@ -18,17 +18,13 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-//        val picasso = Picasso.get()
-//        picasso.load(
-//            "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/480/public/media/image/2016/05/593906-simpson-homer-simpson-respondio-directo-exito-fans.jpg?itok=dkTK7Su8")
-//            .into(my_image_view)
-
-
         GlobalScope.launch {
             val bookDao = AppRoomDatabase.getDatabase(applicationContext).bookDato()
             val repository = BookRepository(bookDao)
-            repository.insert(Book("the best seller: Android",22,"Editorial1","JuanJose","descripcion del libro","url"))
-//            repository.insert(Book("the best seller: Android2",50,"Editorial1","Pepe","descripcion del libro 2","url 2"))
+
+
+
+            repository.insert(Book("the best seller: Android",22,"Editorial1","JuanJose","descripcion del libro","https://i.pinimg.com/474x/a8/6e/26/a86e26dffbcd0f8ffd0b7a6a4809ec68.jpg"))
             val lista = repository.getListBooks()
             lista.forEach {
                 Log.d("DBTEST","Id book = ${it.id}, Title: ${it.title}, Pages: ${it.pages}, Editorial: ${it.editorial}, Author: ${it.author}, Descripcion: ${it.description}, Url: ${it.photoUrl}")
